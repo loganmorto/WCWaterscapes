@@ -1,0 +1,34 @@
+<section class="head-contacts">
+  <div class="head-contact">
+    email:
+    <a href="mailto:{{ site.business.email }}">{{ site.business.email }}</a>
+  </div>
+  {% include cta.html %}
+  <div class="head-contact">
+    phone:
+    <a href="tel:{{ site.business.phone  }}">{{ site.business.phone }}</a>
+  </div>
+</section>
+<header>
+  <div class="header-base">
+    <div class="header-left">
+      <a class="logo" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="Western Carolina Waterscapes Logo">
+      </a>
+    </div>
+    <div class="header-right">
+      <a href="tel:{{ site.business.phone }}">
+        <img src="{{ '/assets/images/phone-black.svg' | relative_url }}" alt="phone icon">
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      {% include cta.html %}
+    </div>
+  </div>
+  <div class="nav-wrapper">
+    {% include navigation.html %}
+  </div>
+</header>

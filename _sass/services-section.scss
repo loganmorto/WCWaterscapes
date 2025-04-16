@@ -1,0 +1,31 @@
+@use "variables" as *;  // Directly load variables
+
+.services-sections {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.services-sections h2 {
+    font-size: 2em;
+    font-family: $font-accent;
+    text-align: center;
+    padding: 1em;
+}
+.services-sections img {
+    border-radius: $radius;
+}
+
+.services-section {
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    align-items: center;
+}
+
+.divider {
+    width: 95%; 
+    height:1px; 
+    background-color:black;    
+}
