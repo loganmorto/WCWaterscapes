@@ -6,6 +6,13 @@
     text-align: center;
 }
 
+.services-container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+}
+
 .services-sections h2 {
     font-size: 2em;
     font-family: $font-accent;
@@ -14,10 +21,10 @@
 }
 .services-sections img {
     border-radius: $radius;
+    border: 1px solid $foreground-color;
 }
 
 .services-section {
-    padding-bottom: 1.5em;
     display: flex;
     flex-direction: column;
     gap: .5em;

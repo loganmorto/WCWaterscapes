@@ -1,36 +1,18 @@
 <section class="services-sections">
-  <h2 class>Our Specialties</h2>
-  <div class="services-section">
-    <img
-      src="/assets/images/ponds.jpg"
-      style="width: 100%;"
-      alt="">
-    <h3>Pond Services</h3>
-    <span class="divider"></span>
-    <p>Installations, demos, maintenance, hardware, fish, accessories, and fish food</p>
+  <h2>Our Specialties</h2>
+  <div class="services-container">
+    {% for service in site.data.servicesSection %}
+      <div class="services-section">
+        <img
+          src="{{ service.image }}"
+          style="width: 100%;"
+          alt="">
+        <h3>{{ service.title }}</h3>
+        <span class="divider"></span>
+        {% if service.description %}
+          <p>{{ service.description }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
   </div>
-  <div class="services-section">
-    <img
-      src="/assets/images/hardscapes.jpg"
-      style="width: 100%;"
-      alt="">
-    <h3>Hardscapes</h3>
-    <span class="divider"></span>
-    <p>Boulder placement, steppers, patios, dry stack walls</p>
-  </div>
-  <div class="services-section">
-    <img
-      src="/assets/images/grading&treeRemoval.jpg"
-      style="width: 100%;"
-      alt="">
-    <h3>Grading & Tree Removal</h3>
-  </div>
-  <div class="services-section">
-    <img
-      src="/assets/images/grading&treeRemoval.jpg"
-      style="width: 100%;"
-      alt="">
-    <h3>Landscape design</h3>
-  </div>
-
 </section>
