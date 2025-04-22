@@ -1,0 +1,28 @@
+---
+layout: page
+title: Our Services
+subheading: From ponds to patios, we offer tailored solutions to transform your outdoor space.
+---
+
+<section class="services">
+
+
+  {% for service in site.data.services %}
+    <div class="service">
+      <h2 class="section-header" style="font-size: 2em; padding: 0;">{{ service.title }}</h2>
+      <img
+        src="{{ service.image }}"
+        alt="{{ service.title }} image"
+        loading="lazy">
+      <p>{{ service.description }}</p>
+
+      {% if service.offerings %}
+        <ul>
+          {% for item in service.offerings %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  {% endfor %}
+</section>

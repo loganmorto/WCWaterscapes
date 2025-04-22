@@ -1,0 +1,49 @@
+// _sass/_variables.scss
+
+// Color Palette
+
+$background-color: hsl(210, 100%, 92%);  /* Soft Pastel Blue */
+
+$foreground-color: hsl(0, 0%, 20%); // Dark Grey (Readable Contrast)
+$foreground-color-alpha: hsla(0, 0%, 20%, 0.5); // Dark Grey (Readable Contrast)
+
+
+$card-color: hsl(210, 100%, 97%); // Very Light Pastel Blue
+$border: 2px solid $card-color;
+$box-shadow: 0 4px 12px $foreground-color-alpha;
+$card-foreground-color: hsl(0, 0%, 20%); // Dark Grey for Readability
+
+$popover-color: hsl(210, 100%, 97%); // Same as Card
+$popover-foreground-color: hsl(0, 0%, 20%); // Dark Grey
+
+$primary-color: hsl(197, 100%, 80%); // Pastel Aqua Blue
+$primary-foreground-color: hsl(0, 0%, 20%); // Dark Grey
+
+$secondary-color: hsl(105, 25%, 70%); // Even gentler, slightly earthier green
+$secondary-foreground-color: hsl(0, 0%, 20%); // Dark Grey
+
+$muted-color: hsl(210, 50%, 80%); // Muted Pastel Blue
+$muted-foreground-color: hsl(210, 30%, 50%); // Softer Blue-Grey
+
+$accent-color: hsl(12, 90%, 75%); // Soft Pastel Coral (Inspired by Koi)
+$accent-foreground-color: hsl(0, 0%, 20%); // Dark Grey
+
+$destructive-color: hsl(0, 80%, 70%); // Gentle Pastel Red
+$destructive-foreground-color: hsl(0, 0%, 20%); // Dark Grey
+
+$border-color: hsl(210, 40%, 70%); // Soft Pastel Blue-Grey Borders
+$input-color: hsl(210, 40%, 70%); // Inputs Blend into the UI
+$ring-color: hsl(197, 80%, 75%); // Light Aqua Blue Ring
+
+$radius: 0.5rem; // Keep Border Radius the Same
+
+// Chart Colors
+$chart-1: hsl(12, 90%, 75%); // Pastel Coral (Koi Orange)
+$chart-2: hsl(173, 80%, 75%); // Pastel Mint Green
+$chart-3: hsl(197, 100%, 80%); // Pastel Aqua Blue
+$chart-4: hsl(43, 90%, 75%); // Soft Pastel Gold
+$chart-5: hsl(27, 80%, 70%); // Warm Pastel Sand
+
+// Fonts
+$font-primary: 'Roboto', sans-serif;
+$font-accent: 'Caveat', cursive;

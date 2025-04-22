@@ -1,0 +1,17 @@
+.service {
+display: flex;
+flex-direction: column;
+gap: 1em;
+padding: 1em 0;
+}
+
+.service h2 {
+    font-family: $font-accent;
+}
+
+.services img {
+    width: 100%;
+    border: $border;
+    border-radius: 1em;
+    box-shadow: $box-shadow;
+}

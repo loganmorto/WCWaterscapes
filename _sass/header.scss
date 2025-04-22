@@ -1,0 +1,136 @@
+// _sass/_header.scss
+
+@use "variables" as *;  // Directly load variables
+
+// navigation and menu, including menu icon, is in navigation.scss
+
+section.head-contacts {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  gap: 1rem;
+  width: 100vw;
+  background: var(--backgroundFrosted);
+  padding: 0;
+  height: 40px;
+}
+
+.head-contact {
+padding: .5em;
+}
+
+.header-base {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  width: 100%;
+  height: 64px;
+  gap: .5em;
+
+}
+
+header {
+  padding: 0em 1em;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  
+  /* Semi-transparent background so the blur is visible */
+  background: $background-color;
+  z-index: 100;
+  /* Backdrop filter for the blur effect */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* for Safari */
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+
+
+.header-left {
+  display: flex;
+  gap: 1em;
+}
+
+.header-right a {
+  display: none;
+  padding: 10px;
+}
+
+
+.logo {
+  width: 200px;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+}
+.logo:hover {
+transform: scale(1.05);
+}
+.logo p {
+  padding: .5em 0;
+}
+.logo img {
+  width: 200px;
+}
+
+.header-right {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.head-contacts .call-to-action {
+  padding: .5em;
+  border: none;
+  box-shadow: none;
+  width: fit-content;
+  display: none;
+  gap: .5em;
+  border-radius: 4px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  header {
+      top: 40px;
+  }
+
+  .head-contacts .call-to-action {
+      display: flex;
+      text-decoration: underline;
+  }
+
+  .logo p {
+      min-width: none;
+  }
+
+  section.head-contacts {
+      display: flex;
+  }
+
+  .header-right a {
+      display: none;
+  }
+  
+}
+
+@media (min-width: 971px) {
+  .header-right .call-to-action {
+      display: flex;
+      padding: .5em;
+      margin: .75em;
+  }
+
+  .head-contacts .call-to-action {
+      display: none;
+  }
+
+
+}

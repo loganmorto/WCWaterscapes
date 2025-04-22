@@ -1,0 +1,55 @@
+.blog-index .post-list {
+    list-style-type: none;
+    padding: 0;
+    padding-top: .5em;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .post-preview {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px $foreground-color-alpha;
+    border: $border
+
+  }
+  
+  .post-title-image {
+    display: block;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .excerpt-content {
+    padding: 1em;
+    border-radius: 0 0 1rem 1rem;
+    background-color: $card-color;
+  }
+  
+  .post-title-image:hover {
+    transform: scale(1.02);
+  }
+  
+  .overlay-title {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    color: $card-color;
+    font-size: 1.4rem;
+  }
+
+  .excerpt-content {
+    color: $card-foreground-color;
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+  }
+  

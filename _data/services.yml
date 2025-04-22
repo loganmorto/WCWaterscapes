@@ -1,0 +1,31 @@
+- title: Pond Services
+  slug: pond-services
+  image: /assets/images/ponds.jpg
+  description: >
+    From full installations to maintenance, we design and build custom ponds with precision and care. We also supply pumps, filters, fish, and accessories to keep your pond thriving.
+  offerings:
+    - Custom pond design and installation
+    - Pond maintenance and cleaning
+    - Pumps, filters, and hardware
+    - Koi, fish food, and accessories
+
+- title: Hardscaping
+  slug: hardscaping
+  image: /assets/images/hardscapes.jpg
+  description: >
+    We create functional and visually striking landscapes with expertly placed boulders, patios, and dry stack walls that complement your property.
+  offerings:
+    - Boulder placement
+    - Steppers and walkways
+    - Stone patios
+    - Dry stack retaining walls
+
+- title: Grading & Tree Removal
+  slug: grading-tree-removal
+  image: /assets/images/grading.jpg
+  description: >
+    Site prep and land clearing to help you start fresh. Whether you're planning a pond, patio, or structure, we’ll make sure the land is ready.
+  offerings:
+    - Grading for drainage and prep
+    - Tree and stump removal
+    - Lot clearing
