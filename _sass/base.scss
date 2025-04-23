@@ -69,6 +69,7 @@ button {
   font-size: 14px;
   color: $accent-foreground-color;
   background-color: $accent-color;
+  box-shadow: $box-shadow-quarter;
   border: 1px solid $accent-foreground-color;
   text-decoration: none;
   width: fit-content;
@@ -89,8 +90,8 @@ button {
 
 .call-to-action-alt {
   background-color: $card-color;
+  box-shadow: $box-shadow-quarter;
   color: $card-foreground-color;
-  box-shadow: none;
   border-color: $card-foreground-color;
   border-radius: 100px;
 }
@@ -129,7 +130,7 @@ button {
 .hero-image {
   width: 150vw; /* Make it really wide */
   border: $border;
-  box-shadow: $box-shadow;
+  box-shadow: $box-shadow-half;
   transform: translateX(0); /* Start at normal position */
   transition: transform 0.1s ease-out;
   will-change: transform;

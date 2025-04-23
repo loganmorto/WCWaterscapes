@@ -5,12 +5,11 @@
 $background-color: hsl(210, 100%, 92%);  /* Soft Pastel Blue */
 
 $foreground-color: hsl(0, 0%, 20%); // Dark Grey (Readable Contrast)
-$foreground-color-alpha: hsla(0, 0%, 20%, 0.5); // Dark Grey (Readable Contrast)
+$foreground-color-half: hsla(0, 0%, 20%, 0.5); // Dark Grey (Readable Contrast)
+$foreground-color-quarter: hsla(0, 0%, 20%, 0.25); // Dark Grey (Readable Contrast)
 
 
 $card-color: hsl(210, 100%, 97%); // Very Light Pastel Blue
-$border: 2px solid $card-color;
-$box-shadow: 0 4px 12px $foreground-color-alpha;
 $card-foreground-color: hsl(0, 0%, 20%); // Dark Grey for Readability
 
 $popover-color: hsl(210, 100%, 97%); // Same as Card
@@ -47,3 +46,7 @@ $chart-5: hsl(27, 80%, 70%); // Warm Pastel Sand
 // Fonts
 $font-primary: 'Roboto', sans-serif;
 $font-accent: 'Caveat', cursive;
+
+$border: 2px solid $card-color;
+$box-shadow-half: 0 4px 12px $foreground-color-half;
+$box-shadow-quarter: 0 4px 12px $foreground-color-quarter;

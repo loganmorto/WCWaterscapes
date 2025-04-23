@@ -9,7 +9,7 @@
   .post-preview {
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 4px 12px $foreground-color-alpha;
+    box-shadow: $box-shadow-half;
     border: $border
 
   }
