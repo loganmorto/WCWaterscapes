@@ -15,3 +15,16 @@ padding: 1em 0;
     border-radius: 1em;
     box-shadow: $box-shadow-half;
 }
+
+.service p {
+    padding: 0 .5em;
+}
+
+.service ul {
+    list-style-position: inside;
+    padding-left: 1.2em;
+}
+
+.service li {
+    text-decoration: underline;
+}

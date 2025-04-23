@@ -1,3 +1,32 @@
+
+
+{% if page.layout == "contact" %}
+    
+    <section class="contact-section">
+
+        <div style="display: flex; flex-direction: column; gap: .7em; text-align: center;">
+          <div style="display: flex; flex-direction:column; gap: 1em; padding:.5em; margin: 1em;">
+            <div>
+              <p style="text-decoration: underline; padding-bottom: .2em">Phone</p>
+              <a href="tel: {{ site.business.phone }}">{{ site.business.phone }}</a>
+            </div>
+            <div>
+              <p style="text-decoration: underline; padding-bottom: .2em">Email</p>
+              <a href="mailto: wcwaterscapes@gmail.com">{{ site.business.email }}</a>
+            </div>
+            <div>
+              <p style="text-decoration: underline; padding-bottom: .2em">Hours</p>
+              <p style="font-weight: bold;">{{ site.business.hours }}</p>
+            </div>
+            <div>
+              <p style="text-decoration: underline; padding-bottom: .2em">Address</p>
+              <a href="https://maps.app.goo.gl/1m63c49zTmR75ibcA">{{ site.business.address }}</a>
+            </div>
+        </div>
+      </section>
+
+{% else %}
+    
 <section class="contact-section">
   <h2 class="section-header">Contact Us!</h2>
   <div style="display: flex; flex-direction: column; gap: .7em; text-align: center;">
@@ -22,3 +51,5 @@
     </div>
   </div>
 </section>
+
+{% endif %}
