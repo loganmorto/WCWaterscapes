@@ -1,8 +1,9 @@
 .service {
 display: flex;
 flex-direction: column;
-gap: 1em;
+
 padding: 1em 0;
+border-radius: 1em;
 }
 
 .service h2 {
@@ -11,13 +12,12 @@ padding: 1em 0;
 
 .services img {
     width: 100%;
-    border: $border;
-    border-radius: 1em;
-    box-shadow: $box-shadow-half;
+    border-radius: 1em 1em 0 0;
+    
 }
 
 .service p {
-    padding: 0 .5em;
+    padding: 0 1em;
 }
 
 .service ul {
@@ -27,4 +27,15 @@ padding: 1em 0;
 
 .service li {
     text-decoration: underline;
+}
+
+.service-card {
+    background-color: $card-color;
+    border: $border;
+    border-radius: 1em;
+    box-shadow: $box-shadow-half;
+    gap: .7em;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.2em;
 }
