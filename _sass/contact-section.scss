@@ -1,0 +1,11 @@
+.contact-section {
+    border: $border;
+    border-radius: 1em;
+    background-color: $card-color;
+    color: $card-foreground-color;
+    box-shadow: $box-shadow-half;
+}
+
+.contact-section a {
+    font-weight: bold;
+}

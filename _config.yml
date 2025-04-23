@@ -8,6 +8,8 @@ url: "https://logan-morto.github.io" # the base hostname & protocol for your sit
 business:
   email: "wcwaterscapes@gmail.com"
   phone: "+1 (919) 699-0897"
+  hours: "8 - 5, by appt. only"
+  address: "1449 Cane Creek Road, Fletcher, NC"
 
 
 collections:
