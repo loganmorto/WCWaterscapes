@@ -27,6 +27,7 @@
 .services-sections img {
     border-radius: $radius;
     border: 1px solid $foreground-color;
+    object-fit: cover;
 }
 
 .services-section {
@@ -40,4 +41,15 @@
     width: 95%; 
     height:1px; 
     background-color:black;    
+}
+
+@media (min-width: 768px) {
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .services-section img {
+        aspect-ratio: 2 / 1.4;
+    }
 }

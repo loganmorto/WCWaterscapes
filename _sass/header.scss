@@ -42,7 +42,7 @@ header {
   position: fixed;
   
   /* Semi-transparent background so the blur is visible */
-  background: $background-color;
+  background: $background-color-frosted;
   z-index: 100;
   /* Backdrop filter for the blur effect */
   backdrop-filter: blur(8px);
@@ -56,7 +56,7 @@ header {
 
 .header-left {
   display: flex;
-  gap: 1em;
+  gap: 2em;
 }
 
 .header-right a {

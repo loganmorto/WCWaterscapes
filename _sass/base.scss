@@ -11,12 +11,17 @@ body {
   background-color: $background-color;
   color: $foreground-color;
   font-family: $font-primary;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 1em;
   line-height: 1.5;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5em; /* 8px gutter between columns */
+  max-width: 1200px;
+}
+
+main {
+  margin-top: 64px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,9 +50,9 @@ a {
   color: $accent-color;
   text-decoration: none;
 
-  &:hover {
-    color: adjust($accent-color, 10%);
-  }
+  // &:hover {
+  //   color: adjust($accent-color, 10%);
+  // }
 }
 
 button {
@@ -80,7 +85,7 @@ button {
   transition: transform 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
 }
 .call-to-action:hover {
-  background-color: var(--primary);
+filter: saturate(1.5);
   color: var(--background);
   text-decoration: underline;
   transform: scale(1.05);
@@ -158,4 +163,51 @@ button {
   font-family: $font-accent;
   text-align: center;
   padding: .5em;
+}
+
+.hero-section {
+  display:flex;
+  flex-direction:column;
+  gap: 1.5em;
+  margin: 1em 1em;
+  margin-bottom: 0;
+
+}
+
+@media (min-width: 768px) {
+  .hero-image {
+    width: 100%; /* Make it really wide */
+    border: $border;
+    box-shadow: $box-shadow-half;
+    transform: none; /* Start at normal position */
+    transition: none;
+    margin-left: 0;
+    margin-bottom: 1em;
+  
+  }
+
+  .hero-section {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 1.5em;
+    margin: 3em 1em;
+    margin-bottom: 0;
+
+  }
+
+  .hero-text img {
+    display: none;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+    margin: 0;
+    margin-top: 2em;
+    overflow: visible;
+  }
+
+  main {
+    margin-top: 104px;
+  }
 }
