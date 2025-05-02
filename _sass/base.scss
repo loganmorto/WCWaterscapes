@@ -212,6 +212,14 @@ filter: saturate(1.5);
   }
 
   .facebook-banner {
+   
+    margin-bottom: 2.5em ;
+    margin-top: 1.5em;
+  }
+}
+
+@media (min-width:1200px) {
+  .facebook-banner {
     border-radius: 100px;
     margin-bottom: 2.5em ;
     margin-top: 1.5em;
