@@ -97,6 +97,10 @@ transform: scale(1.05);
   margin: 0;
 }
 
+.desktop-nav {
+  display: none;
+}
+
 @media (min-width: 768px) {
   header {
       top: 40px;
@@ -118,6 +122,24 @@ transform: scale(1.05);
   .header-right a {
       display: none;
   }
+
+ .desktop-nav {
+  position: initial;
+  justify-content: center;
+  background-color: transparent;
+  margin-bottom: -4px;
+  top: 64px;
+  right: auto;
+  height: auto;
+  transform: none;
+  transition: none;
+  z-index: 1001;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  color: $foreground-color;
+  text-align: right;
+ }
   
 }
 

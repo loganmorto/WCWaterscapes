@@ -1,6 +1,6 @@
 .brands {
     background-color: $card-color;
-    border-radius: 1em;
+    border-radius: $radius;
     padding-bottom: 2em;
     margin: 2em 0;
     box-shadow: $box-shadow-half;
@@ -16,4 +16,16 @@
     flex-direction: column;
     align-items: center;
     gap: 1em;
+  }
+
+  @media (min-width: 768px) {
+
+    .brand-logos-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 4em;
+      justify-content: center;
+      padding: 2em;
+    }
+    
   }

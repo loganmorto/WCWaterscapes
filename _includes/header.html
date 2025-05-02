@@ -14,6 +14,9 @@
       <a class="logo" href="{{ '/' | relative_url }}">
         <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="Western Carolina Waterscapes Logo">
       </a>
+      <div class="desktop-nav">
+        {% include navigation.html %}
+      </div>
     </div>
     <div class="header-right">
       <a href="tel:{{ site.business.phone }}">
@@ -24,7 +27,7 @@
         <span></span>
         <span></span>
       </button>
-      {% include cta.html %}
+
     </div>
   </div>
   <div class="nav-wrapper">

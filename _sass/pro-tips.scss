@@ -7,7 +7,7 @@
   }
   
   .post-preview {
-    border-radius: 1rem;
+    border-radius: $radius;
     overflow: hidden;
     box-shadow: $box-shadow-half;
     border: $border
@@ -21,7 +21,7 @@
     background-position: center;
     position: relative;
     text-decoration: none;
-    border-radius: 0.5rem;
+    border-radius: $radius;
     transition: transform 0.3s ease;
   }
 

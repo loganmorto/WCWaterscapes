@@ -31,9 +31,26 @@
 
   .map {
     border: $border;
-    border-radius: 1em;
+    border-radius: $radius;
     box-shadow: $box-shadow-half;
     margin-bottom: .8em;
+  }
+
+  @media (min-width: 768px) {
+
+    .service-regions ul {
+      font-size: 1em;
+    }
+
+    .service-regions > p {
+      font-size: 1em !important; 
+    }
+
+    .service-regions > *:not(h2) {
+      margin: 1em 0 !important;
+    }
+    
+    
   }
 
   

@@ -11,7 +11,7 @@
   }
   
   .recent-post-card {
-    border-radius: 0.5rem;
+    border-radius: $radius;
     overflow: hidden;
     border: $border;
     box-shadow: $box-shadow-half;
@@ -56,6 +56,10 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+      }
+
+      .recent-posts-widget {
+        margin: 1em;
       }
 
   }

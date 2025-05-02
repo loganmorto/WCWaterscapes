@@ -5,7 +5,7 @@
     flex-direction: column;
     text-align: center;
     background-color: $card-color;
-    border-radius: 1em;
+    border-radius: $radius;
     margin: 1em 0;
     box-shadow: $box-shadow-half;
 }

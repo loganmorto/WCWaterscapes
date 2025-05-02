@@ -3,7 +3,7 @@ display: flex;
 flex-direction: column;
 
 padding: 1em 0;
-border-radius: 1em;
+border-radius: $radius;
 }
 
 .service h2 {
@@ -32,7 +32,7 @@ border-radius: 1em;
 .service-card {
     background-color: $card-color;
     border: $border;
-    border-radius: 1em;
+    border-radius: $radius;
     box-shadow: $box-shadow-half;
     gap: .7em;
     display: flex;
