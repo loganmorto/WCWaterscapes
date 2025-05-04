@@ -7,7 +7,17 @@
     - Custom pond design and installation
     - Pond maintenance and cleaning
     - Pumps, filters, and hardware
-    - Koi, fish food, and accessories
+
+- title: Koi Fish
+  slug: koi-fish
+  image: /assets/images/koiFish.jpg
+  description: >
+    We offer healthy, hand-selected koi in a variety of sizes and colors, perfect for any pond setup. Whether you're just getting started or adding to an existing pond, our koi are raised with care and ready for their new home. We also provide high-quality koi food and expert advice to help your fish thrive year-round.
+  offerings:
+    - Seasonal availability of hand-picked koi
+    - Multiple size and color varieties
+    - Expert care tips for pond health
+    - Nijikawa koi food and nutritional guidance
 
 - title: Hardscaping
   slug: hardscaping
