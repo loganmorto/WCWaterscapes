@@ -36,6 +36,7 @@
     border-radius: $radius;
     background-color: $card-color;
     box-shadow: $box-shadow-half;
+    overflow: hidden;
   }
 
   .contact-section>p {
