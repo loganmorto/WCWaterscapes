@@ -26,6 +26,19 @@
 
   }
 
+  .mobile-gallery-tip {
+    width: fit-content;
+    text-align: right;
+    color: $accent-foreground-color;
+    font-family: "Caveat", cursive;
+    font-size: 1.6em;
+    margin-top: -1.5em;
+    background: $accent-color;
+    justify-self: right;
+    padding: .1em .25em;
+    transform: translate(10px, 50px) rotate(30deg);
+  }
+
   .gallery a:hover {
     box-shadow: $box-shadow-half;
   }
