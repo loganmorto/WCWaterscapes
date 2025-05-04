@@ -1,0 +1,17 @@
+  - title: "Project 1"
+    location: "Fairview, NC"
+    images_directory: "uploads/case-studies/project-1"
+    description: "A big pond full of nice and honest fish."
+    tags: ["#pond", "#Koi Fish"]
+
+  - title: "Project 2"
+    location: "Weaverville, NC"
+    images_directory: "uploads/case-studies/case-study-2"
+    description: "A waterfall with a patiospace."
+    tags: ["#waterfall", "#patio"]
+
+  - title: "Project 3"
+    location: "Candler, NC"
+    images_directory: "uploads/case-studies/case-study-3"
+    description: "This one has a lot of plants"
+    tags: ["#Stonework", "#Backyard Paradise", "#plants"]

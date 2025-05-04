@@ -53,3 +53,8 @@
     gap: .3em;
   }
   
+  @media (min-width: 758px) {
+    .blog-index .post-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
