@@ -1,9 +1,6 @@
 .contact-section {
-    border: $border;
-    border-radius: $radius;
-    background-color: $card-color;
+
     color: $card-foreground-color;
-    box-shadow: $box-shadow-half;
     text-align: center;
     
     width: fit-content;
@@ -34,6 +31,15 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 1.5em;
+    border: $border;
+    border-radius: $radius;
+    background-color: $card-color;
+    box-shadow: $box-shadow-half;
+  }
+
+  .contact-section>p {
+    padding: 0 .5em;
   }
   
   .contact-info {
