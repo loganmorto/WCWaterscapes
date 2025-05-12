@@ -16,8 +16,7 @@
   }
   
   .contact-section img {
-    width: calc(100% - 8px);
-    height: calc(100% - 8px);
+    width: 100%;
     aspect-ratio: 2 / 1.4;
     object-fit: cover;
     border-radius: $radius $radius 0 0 ;
@@ -68,6 +67,7 @@
       gap: 1em;
       align-items: center;
       text-align: left;
+      padding: 1em;
     }
 
     .contact-section {
@@ -82,7 +82,8 @@
     }
   
     .contact-section img {
-      margin: 2em;
+      width: calc(100% - 8px);
+      height: calc(100% - 8px);
       box-shadow: $box-shadow-half;
       border: $border;
       border-radius: $radius;
