@@ -54,7 +54,14 @@ function setGallery(el) {
 
     document.getElementById('next').onclick = () => galleryLinks[nextKey].click();
     document.getElementById('prev').onclick = () => galleryLinks[prevKey].click();
+
+    // Add/update the counter
+    const counter = document.getElementById('counter');
+    if (counter) {
+        counter.textContent = `Image ${currentKey + 1} of ${galleryLinks.length}`;
+    }
 }
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -112,11 +119,38 @@ document.addEventListener("DOMContentLoaded", function() {
     elements.forEach(element => {
         element.addEventListener("click", function(event) {
             event.preventDefault();
-            document.getElementById('lightbox').innerHTML = '<a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="img" style="background: url(\''+this.getAttribute('href')+'\') center center / contain no-repeat;" title="'+this.getAttribute('title')+'" ><img src="'+this.getAttribute('href')+'" alt="'+this.getAttribute('title')+'" /></div><span>'+this.getAttribute('title')+'</span>';
-            document.getElementById('lightbox').style.display = 'block';
+            document.getElementById('lightbox').innerHTML = `
+            <a id="close"></a>
+            <a id="next">&rsaquo;</a>
+            <a id="prev">&lsaquo;</a>
+            <div class="img" style="background: url('${this.getAttribute('href')}') center center / contain no-repeat;" title="${this.getAttribute('title')}">
+              <img src="${this.getAttribute('href')}" alt="${this.getAttribute('title')}" />
+            </div>
+            <span>${this.getAttribute('title')}</span>
+            <div id="counter"></div>
+          `;
+                      document.getElementById('lightbox').style.display = 'block';
 
             setGallery(this);
         });
     });
+
+    // Enable keyboard navigation for lightbox
+document.addEventListener("keydown", function(event) {
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox.style.display === 'block') {
+        if (event.key === "ArrowRight") {
+            const next = document.getElementById('next');
+            if (next) next.click();
+        } else if (event.key === "ArrowLeft") {
+            const prev = document.getElementById('prev');
+            if (prev) prev.click();
+        } else if (event.key === "Escape") {
+            lightbox.innerHTML = '';
+            lightbox.style.display = 'none';
+        }
+    }
+});
+
 
 });

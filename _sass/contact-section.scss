@@ -16,7 +16,8 @@
   }
   
   .contact-section img {
-    width: 100%;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
     aspect-ratio: 2 / 1.4;
     object-fit: cover;
     border-radius: $radius $radius 0 0 ;
