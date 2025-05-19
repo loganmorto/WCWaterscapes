@@ -97,16 +97,14 @@ transform-origin: 50% 50%;
 
 #lightbox #counter {
     position: fixed;
-    bottom: 0;
-    margin-bottom: 1.5em;
-    width: 100%;
-    text-align: center;
+    top: 0;
+    left: 0;
+    padding: 1.5em;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
     color: white;
     font-size: 1rem;
     font-family: $font-primary;
-    text-shadow:
-      -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;
+    z-index: 100000; /* ensure it's above other elements */
+    border-bottom-right-radius: 5px;
   }
+  
